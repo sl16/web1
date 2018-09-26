@@ -2,9 +2,105 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 1 | tadyvojta.cz</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <style>
+      .container {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;Georgia;
+        margin-left:15%;
+        margin-right:15%;
+      }
+
+      #header-menu{
+        margin:10px 5px 30px 5px;
+        padding: 10px 5px 5px 10px;
+
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+      }
+
+      #header-urls{
+        margin-left:auto;
+        padding-right:3em;
+      }
+
+      #header-logo{
+        width:50px;
+        height:50px;
+        margin-right: auto;
+      }
+
+      #header-name{
+        font-weight: bold;
+        font-size: 2em;
+      }
+
+      #header-url-item{
+        text-decoration: underline;
+        margin-right: 1em;
+        color:black;
+       }
+
+      div .article{
+        display:flex;
+        justify-content: center;
+        height: 30vw;
+      }
+
+      .article-text{
+        display:flex;
+        flex-direction:column;
+        padding: 1em 1em 1em 1em;
+        align-items: center;
+        text-align: justify;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .article img{
+        width: auto;
+        height: 30vw;
+      }
+    </style>
   </head>
+
   <body>
-<p>tohle je test</p>
+    <div class="container">
+    <header>
+
+      <div id="header-menu">
+
+        <img src="https://tadyvojta.cz/wp-content/uploads/2018/09/logofavicon.png" alt="Logo stránky" id="header-logo">
+
+        <div id="header-name">
+          <h1>Jednoduchá stránka</h1>
+        </div>
+
+        <div id="header-urls">
+          <nav>
+            <a href="/zpravy/" id="header-url-item">Zprávy</a>
+            <a href="/novinky/" id="header-url-item">Novinky</a>
+            <a href="/pocasi/" id="header-url-item">Počasí</a>
+          </nav>
+        </div>
+
+      </div>
+
+    </header>
+
+    <div class="article">
+        <img src="http://forum24.cz/wp-content/uploads/2016/03/u-s-authorities-reported-countrys-first-case-mad-cow-disease-six-years-tuesday-swiftly.jpg" alt="Šílená kráva">
+        <div class="article-text">
+          <h2> Nemoc šílených krav znovu útočí</h2>
+          <p>Lorem Ipsum je demonstrativní výplňový text používaný v tiskařském a knihařském průmyslu. Lorem Ipsum je považováno za standard v této oblasti už od začátku 16. století, kdy dnes neznámý tiskař vzal kusy textu a na jejich základě vytvořil speciální vzorovou knihu. Jeho odkaz nevydržel pouze pět století, on přežil i nástup elektronické sazby v podstatě beze změny. Nejvíce popularizováno bylo Lorem Ipsum v šedesátých letech 20. století, kdy byly vydávány speciální vzorníky s jeho pasážemi a později pak díky počítačovým DTP programům jako Aldus PageMaker. Je obecně známou věcí, že člověk bývá při zkoumání grafického návrhu rozptylován okolním textem, pokud mu dává nějaký smysl. Úkolem Lorem Ipsum je pak nahradit klasický smysluplný text vhodnou bezvýznamovou alternativou s relativně běžným rozložením slov. To jej dělá narozdíl od opakujícího se "Tady bude text. Tady bude text..." mnohem více čitelnějším. V dnešní době je Lorem Ipsum používáno spoustou DTP balíků a webových editorů coby výchozí model výplňového textu. Ostatně si zkuste zadat frázi "lorem ipsum" do vyhledavače a sami uvidíte. Během let se objevily různé varianty a odvozeniny od klasického Lorem Ipsum, někdy náhodou, někdy účelně (např. pro pobavení čtenáře).
+          </p>
+          <button type="button" name="button">Číst článek</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
